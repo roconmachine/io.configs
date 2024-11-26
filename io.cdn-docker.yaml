@@ -1,0 +1,23 @@
+server:
+  port: 8085
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/IO_CDN_DB
+    username: postgres
+    password: postgres
+    properties:
+      logging.level: DEBUG
+
+service:
+  name: cdn
+  apiversion: v1.0
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
+profile:
+  name: docker
+
+cdn:
+  location: location/
+
