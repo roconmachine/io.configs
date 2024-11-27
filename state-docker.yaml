@@ -1,0 +1,16 @@
+server:
+  port: 8087
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.0.138:5432/STATE_DB
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+service:
+  name: state
+  apiversion: v1.0
