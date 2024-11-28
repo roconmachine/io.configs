@@ -1,0 +1,25 @@
+server:
+  port: 8088
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://192.168.0.138:5432/IO_NOTIFICATION_DB
+    username: postgres
+    password: postgres
+    properties:
+      logging.level: DEBUG
+
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://192.168.0.138:5432/IO_NOTIFICATION_DB
+    user: :postgres
+    password: postgres
+    locations: classpath:db/migration
+service:
+  name: io.notification
+  apiversion: v1.0
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
+profile:
+  name: docker
