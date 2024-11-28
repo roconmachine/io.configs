@@ -11,7 +11,7 @@ spring:
   flyway:
     enabled: true
     url: jdbc:postgresql://192.168.0.138:5432/IO_NOTIFICATION_DB
-    user: :postgres
+    user: postgres
     password: postgres
     locations: classpath:db/migration
 service:
