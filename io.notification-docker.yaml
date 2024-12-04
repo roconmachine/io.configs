@@ -20,7 +20,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
-        spring.json.type.mapping: kafkaRequestMessage:com.roconmachine.io.notification.kafka.NotificationProducer
+        spring.json.type.mapping: kafkaRequestMessage:com.roconmachine.io.notification.kafka.NotificationProducerMessage
 service:
   name: io.notification
   apiversion: v1.0
