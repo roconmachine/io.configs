@@ -24,6 +24,7 @@ spring:
 service:
   name: io.notification
   apiversion: v1.0
+  notification-kafka: "notification-topic"
 
 logging:
   level:
