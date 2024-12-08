@@ -33,5 +33,7 @@ logging:
   level:
     org.springframework.r2dbc: DEBUG
     org.springframework.kafka: DEBUG
+    org.apache.kafka: DEBUG
+
 profile:
   name: docker
