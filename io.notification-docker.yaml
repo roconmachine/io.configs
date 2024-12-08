@@ -21,7 +21,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
-        spring.kafka.header.matcher: *
+#        spring.kafka.header.matcher: *
         spring.json.type.mapping: kafkaRequestMessage:com.roconmachine.io.notification.kafka.NotificationProducerMessage
 
 #      acks: all
