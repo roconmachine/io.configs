@@ -26,7 +26,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
       properties:
-        schema.registry.url: http://localhost:${server.port}
+        schema.registry.url: http://192.168.0.138:8088
 #        spring.json.type.mapping: kafkaRequestMessage:com.roconmachine.io.notification.kafka.NotificationProducerMessage
       acks: all
       enable.idempotence: true
