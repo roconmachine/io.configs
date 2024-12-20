@@ -19,3 +19,4 @@ service:
   name: io.notification.processor
   apiversion: v1.0
   notification-kafka: "notification-topic"
+
