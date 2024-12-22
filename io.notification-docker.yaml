@@ -14,19 +14,13 @@ spring:
     user: postgres
     password: postgres
     locations: classpath:db/migration
-#  cloud:
-#    stream:
-#      binding:
-#        input: ${service.notification-kafka}
-#        content-type: application/*+avro
 
   kafka:
     producer:
       bootstrap-servers: 192.168.0.138:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
       properties:
-#        schema.registry.url: http://192.168.0.138:8088
         spring.json.type.mapping: kafkaRequestMessage:com.roconmachine.io.notification.kafka.MessageRequest
       acks: all
       enable.idempotence: true
