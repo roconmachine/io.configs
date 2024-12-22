@@ -10,8 +10,8 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       enable.auto.commit: false
       properties:
-        spring.json.trusted.packages: '*'
-#        spring.json.type.mapping: kafkaRequestMessage:com.roconmachine.io.notification.processor.schema.MessageRequest
+        spring.json.trusted.packages: com.roconmachine.io.notification.processor.schema
+        spring.json.type.mapping: kafkaRequestMessage:com.roconmachine.io.notification.processor.schema.MessageRequest
 
   mail:
     host: localhost
