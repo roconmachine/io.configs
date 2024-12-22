@@ -24,10 +24,10 @@ spring:
     producer:
       bootstrap-servers: 192.168.0.138:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        schema.registry.url: http://192.168.0.138:8088
-#        spring.json.type.mapping: kafkaRequestMessage:com.roconmachine.io.notification.kafka.NotificationProducerMessage
+#        schema.registry.url: http://192.168.0.138:8088
+        spring.json.type.mapping: kafkaRequestMessage:com.roconmachine.io.notification.kafka.MessageRequest
       acks: all
       enable.idempotence: true
       min.insync.replicas: 2
@@ -38,7 +38,7 @@ spring:
 service:
   name: io.notification
   apiversion: v1.0
-  notification-kafka: "email-topic"
+  notification-kafka-topic: "email-topic"
 
 logging:
   level:
