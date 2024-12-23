@@ -35,3 +35,7 @@ service:
   notification-kafka-topic: "email-topic"
   groupid: "mail-group"
 
+  logging:
+    level.org.springframework.kafka=DEBUG
+    level.org.springframework.kafka.support.serializer.JsonDeserializer=DEBUG
+    level.com.fasterxml.jackson=DEBUG
