@@ -34,7 +34,7 @@ service:
   apiversion: v1.0
   notification-kafka-topic: "email-topic"
   groupid: "mail-group"
-  email-from: "roconmachine@gmil.com"
+  email-from: "rocon@gmil.com"
   completed-status-name: "SENT"
 
 #logging:
