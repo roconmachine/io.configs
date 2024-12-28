@@ -36,7 +36,9 @@ service:
   groupid: "mail-group"
   email-from: "rocon@gmil.com"
   completed-status-name: "SENT"
-
+services:
+  cdn:
+    baseUrl: "localhost:8088"
 #logging:
 #  level.org.springframework.kafka=DEBUG
 #  level.org.springframework.kafka.support.serializer.JsonDeserializer=DEBUG
