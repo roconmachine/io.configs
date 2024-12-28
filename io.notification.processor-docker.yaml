@@ -35,6 +35,7 @@ service:
   notification-kafka-topic: "email-topic"
   groupid: "mail-group"
   email-from: "roconmachine@gmil.com"
+  completed-status-name: "SENT"
 
 #logging:
 #  level.org.springframework.kafka=DEBUG
