@@ -17,14 +17,14 @@ api:
   version : v01
 services:
   cdn:
-    baseUrl: "location:8085"
+    baseUrl: "http://192.168.0.138:8085/cdn/v1.0"
   fgaccess:
-    baseUrl: "location:8084"
+    baseUrl: "http://localhost:8084/access/v1.0"
   notification:
-    baseUrl: "location:8088"
+    baseUrl: "http://localhost:8088/io.notification/v1.0"
   payment:
-    baseUrl: "location:8083"
+    baseUrl: "http://localhost:location:8083"
   report:
-    baseUrl: "location:8086"
+    baseUrl: "http://localhost:8086/report/v1.0"
   state:
-    baseUrl: "location:8087"
+    baseUrl: "http://localhost:8087/state/v1.0"
