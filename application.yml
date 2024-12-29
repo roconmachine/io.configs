@@ -15,3 +15,16 @@ spring:
       override-system-properties: false
 api:
   version : v01
+services:
+  cdn:
+    baseUrl: "cdn"
+  fgaccess:
+    baseUrl: ""
+  notification:
+    baseUrl: ""
+  payment:
+    baseUrl: ""
+  report:
+    baseUrl: ""
+  state:
+    baseUrl: ""
