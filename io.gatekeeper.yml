@@ -5,11 +5,12 @@ spring:
     gateway:
       routes:
         - id: route_to_report
-          uri: "lb:REPORT"
+          uri: "lb://REPORT"
           predicates:
             - Path=/report/**
+
         - id: route_to_cdn
-          uri: "lb:IO.CDN"
+          uri: "lb://IO.CDN"
           predicates:
             - Path=/io.cdn/**
 
