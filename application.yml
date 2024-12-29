@@ -17,14 +17,14 @@ api:
   version : v01
 services:
   cdn:
-    baseUrl: "cdn"
+    baseUrl: "location:8085"
   fgaccess:
-    baseUrl: ""
+    baseUrl: "location:8084"
   notification:
-    baseUrl: ""
+    baseUrl: "location:8088"
   payment:
     baseUrl: ""
   report:
-    baseUrl: ""
+    baseUrl: "location:8086"
   state:
-    baseUrl: ""
+    baseUrl: "location:8087"
