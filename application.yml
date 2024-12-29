@@ -23,7 +23,7 @@ services:
   notification:
     baseUrl: "location:8088"
   payment:
-    baseUrl: ""
+    baseUrl: "location:8083"
   report:
     baseUrl: "location:8086"
   state:
