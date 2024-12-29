@@ -9,7 +9,7 @@ spring:
       logging.level: DEBUG
 
 service:
-  name: cdn
+  name: io.cdn
   apiversion: v1.0
 
 logging:
