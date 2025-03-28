@@ -4,3 +4,11 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+
+
+
+
+management:
+  metrics:
+    enable:
+      processor: false
