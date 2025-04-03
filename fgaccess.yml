@@ -14,11 +14,11 @@ spring:
     password: ${FLYWAY_PASSWORD:postgres}
     locations: ${FLYWAY_LOCATION:classpath:db/migration}
 
-#application:
-#  name: fgaccess
-#service:
-#  name: access
-#  apiversion: v1.0
+application:
+  name: fgaccess
+service:
+  name: access
+  apiversion: v1.0
 
 logging:
   level:
